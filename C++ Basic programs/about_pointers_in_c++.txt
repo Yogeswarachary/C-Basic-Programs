@@ -1,0 +1,28 @@
+//Program for understanding the pointers//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int number=15;
+int* p;
+p=&number;
+cout<<"the address of the number variable is:-"<<&number<<"\n";
+cout<<"the address of the p variable is:-"<<p<<"\n";
+cout<<"the value of a p variable is:-"<<*p<<"\n";
+}
+
+//Swapping the values of a variables without using the the third variable//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int a=10,b=20,*p1=&a,*p2=&b;
+cout<<"before swapping *p1= "<<*p1<<" "<<*p2<<" "<<endl;
+*p1=*p1+*p2;
+*p2=*p1-*p2;
+*p1=*p1-*p2;
+cout<<"after swapping *p1="<<*p1<<" "<<*p2<<" "<endl;
+return 0;
+}

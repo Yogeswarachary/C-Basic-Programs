@@ -1,0 +1,19 @@
+### printing the first 20 numbers using the while loop
+
+#Program
+#include<iostream>
+using namespace std;
+
+void printFunction()
+{
+int i=1;
+while(i<20);
+{
+cout<<i<<" ";
+}
+}
+int main()
+{
+printFunction();
+return 0;
+}

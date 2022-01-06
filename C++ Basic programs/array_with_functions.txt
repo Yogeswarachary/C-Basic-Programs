@@ -1,0 +1,141 @@
+//example program for Array//
+
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+ int arr[5]={10, 0, 20, 0, 30};  //creating and initializing array    
+        //traversing array    
+        for (int i = 0; i < 5; i++)    
+        {    
+            cout<<arr[i]<<"\n";    
+        }    
+}  
+
+// example program for Array Traversing using for each loop//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int arr[5]={10,20,30,40,50};
+for(int i:arr)
+{
+cout<<i<<"\n";
+}
+}
+
+//Passing Array to function//
+
+#include<iostream>
+using namespace std;
+
+void printArray(int arr[5]);
+int main()
+{
+int arr1[5]={1,2,3,4,5,6};
+int arr2[5]={7,8,9,10,11,12};
+printArray(arr1);
+printArray(arr2);
+}
+void printArray(int arr[5])
+{
+cout<<"printing the array elements:-"<<endl;
+for(int i=0;i<5;i++)
+{
+cout<<arr[i]<<"\n";
+}
+}
+
+//Passing array to function and getting minimum values from the array//
+
+#include<iostream>
+using namespace std;
+void printMin(int arr[5]);
+int main()
+{
+    int arr1[5]={1,2,3,4,5};
+    int arr2[5]={0,9,8,7,6};
+    printMin(arr1);
+    printMin(arr2);
+}
+void printMin(int arr[5])
+{
+    int min=arr[0];
+        for(int i=0;i<5;i++)
+    {
+        if(min>arr[i])
+        {
+            min=arr[i];
+        }
+    }
+    cout<<"Minimum element is:"<<min<<"\n";
+}
+
+
+//Passing Array to function example to get minimumnumbers
+
+#include<iostream>
+using namespace std;
+void printMin(int arr[5]);
+int main()
+{
+int arr1[5]={1,2,3,4,5};
+int arr2[5]={0,9,8,7,6};
+printMin(arr1);
+printMin(arr2);
+}
+void printMin(int arr[5])
+{
+for(int i=0;i<5;i++)
+{
+if(min>arr[i])
+{
+cout<<arr[i]<<"\n";
+}
+}
+cout<<"minimum value of given array is:"<<min<<"\n";
+}
+
+//Multi_dimensional array example//
+
+#include<iostream>
+usoing namespace std;
+
+int main()
+{
+int test[3][3];
+test[0][0]=1;
+test[0][1]=2;
+test[1][0]=3;
+test[1][1]=4;
+test[2][0]=5;
+test[2][1]=6;
+for(int i=0;i<3;i++)
+{
+for(int j=0;j<3;j++)
+{
+cout<<tset[i][j]<<" ";
+}
+cout<<"\n";
+}
+return 0;
+}
+
+//Multi_Dimensional array example Declaration and Initialization at a time//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int test[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+for(int i=0;i<3;i++)
+{
+for(int j=0;j<3;j++)
+{
+cout<<test[i][j]<<" ";
+}
+cout<<"\n";
+}
+return 0;
+}

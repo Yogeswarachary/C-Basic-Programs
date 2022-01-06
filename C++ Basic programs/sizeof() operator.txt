@@ -1,0 +1,55 @@
+//Program for the getting storing capacity of the datatypes//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+std::cout<<"the size of the integer data type is:"<<sizeof(int)<<std::endl;
+std::cout<<"the size of the float data type is:"<<sizeof(float)<<std::endl;
+std::cout<<"the size of the double datatype is:"<<sizeof(double)<<std::endl;
+std::cout<<"the suze of the character data type is:"<<sizeof(char)<<std::endl;
+return 0;
+} 
+
+//When an operand is of Class type.//
+
+#include<iostream>
+using namespace std;
+class Base
+{
+int a; //In this section you can add some other variable like
+};      //int b || int c || char ch || float d......etc.
+int main()
+{
+Base b;
+std::cout<<"the size of the Base is:"<<sizeof(b)<<std::endl;
+return 0;
+}
+
+
+//Lets consider another scenario of an array//
+
+#include<iostream>
+using namespace std;
+void fun(int arr[])
+{
+std::cout<<"the size of the array is:"<<sizeof(arr)<<std::endl;
+}
+int main()
+{
+int arr[]={1,2,3,4,5};
+fun(arr);
+return 0;
+}
+
+//when operand in expression//
+#include<iostream>
+using namespace std;
+int main()
+{
+int num1;
+double num2;
+cout<<sizeof(num1+num2)<<endl;
+return 0;
+}
+

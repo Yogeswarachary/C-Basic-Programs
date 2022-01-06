@@ -1,0 +1,31 @@
+## C++ code for fibnocci series ##
+//Program//
+
+#include<iostream>
+using namespace std;
+
+//Driving code
+int main()
+{
+int n1 = 0,n2 = 1, n3, i, number; //'number' obj is used to asking the user to enter input. 
+cout << "enter the number you want to see the fibonacci series";
+cin << number;
+cout << n1 << " " << n2 <<" "; //Printing the 0 and 1 values repectively.
+
+for(int i=2; i<number ;i++) //we have n1=0 and n2=1, so that for loop starts from "2"
+{
+n3 = n1 + n2;
+cout << n3;
+n1 = n2;
+n2 = n3;
+}
+return 0;
+}
+
+Eg output:- fabinocci series example
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
+
+//above n1=0 and n2=1 indicates that these are first elements in fibnocci series//
+//n3 is output object for storing the n1 and n2 values.//
+
+

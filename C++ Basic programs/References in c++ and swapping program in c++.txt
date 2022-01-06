@@ -1,0 +1,93 @@
+//C++ REFERNCES//
+
+//Reference can be created by simply using an ampersand (&) operator.//
+eg:-int a=10;  
+It can be referenced as the following manner
+int &ref=a;
+
+//we have to types of references//
+1.References to non-const values
+2.References as aliases
+
+//1. References to non-const values//
+-> It can be declared by using & operator with the reference type variable.
+
+here is the example program
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int a=10;
+int &val=a;
+std::cout<<val<<std::endl;
+return 0;
+}
+ 2. References as "aliases".
+-> References as aliases is another name of the
+ variable which is being referenced.
+-> here is the example program.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int a=10;
+int &b=a;
+int &c=a;
+std::cout<<"the value of a is:"<<a<<std::endl;
+std::cout<<"the value of b is:"<<b<<std::endl;
+std::cout<<"the value of c is:"<<c<<std::endl;
+return 0;
+}
+
+//swapping the numbers programs//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int a=10;  // variable initialization  
+int b=15;  // variable initialization  
+swap(a,b);
+std::cout<<"the value of a is:"<<a<<std::endl;
+std::cout<<"the value of b is:"<<b<<std::endl;
+return 0;
+}
+void swap(int &x, int &y) //function defination
+{
+int temp; // variable declaration
+temp = x;
+x = y;
+y = temp;
+}
+
+//with the help of the references, we can easily access the nested data//
+//here is the example program//
+
+#include<iostream>
+using namespace std;
+struct profile
+{
+int id;
+};
+struct employee
+{
+profile p;
+};
+int main()
+{
+employee e;
+int &ref=e.p.id;
+ref=21;
+std::cout<<e.p.id<<std::endl;
+}
+
+
+
+
+
+
+
+

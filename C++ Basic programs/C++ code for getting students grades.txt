@@ -1,0 +1,69 @@
+//code for students marks secured in exams//
+
+//Program//
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int num;
+cout <<"enter the number for checking the grade";
+cin >> num;
+
+if(num <= 0 || num > 100)
+{
+cout <<"You entered the wrong number";
+}
+
+//0-35 failed in exam//36-50 'C' grade//51-70 'B' grade
+//70-90 'A' Grade//91-100'O' Grade//
+
+else if(num > 0 && num < 35)
+{
+cout <<"you are failed in exams";
+}
+
+else if(num > 35 && num < 50)
+{
+cout << "you secured 'C' grade in the exam";
+}
+
+else if(num > 50 && num <70)
+{
+cout<<"you secured 'B' grade in the exam";
+}
+
+else if(num > 70 && num < 90)
+{
+cout <<"you secured 'A' grade in the exam";
+}
+
+else if(num > 90 && num < 100)
+{
+cout <<"you secured 'O' grade in the exam";
+}
+}
+
+//above Problem solved using the Switch statement//
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+    cout << "enter the number to check grade ";
+    cin >> num;
+    
+    switch(num)
+    {
+        case 35:cout<<"Your are Fail in the exam"; break;
+        case 50:cout<<"You scored 'C' grade"; break;
+        case 70:cout<<"You scored 'B' grade"; break;
+        case 90:cout<<"You scored 'A' grade"; break;
+        case 99:cout<<"You scored 'O' Grade"; break;
+        default:cout<<"Not 35,50,70,90,99"; break;
+    }
+}
+

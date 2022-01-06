@@ -1,0 +1,26 @@
+Problem statement:-
+
+//Take a random number input from the user, and print the last number from the user given input as the output.//
+
+#sol:- just assume suppose user entered following number
+678, and you have to print the last number(that is 8).
+
+Logic behind the problem:-  Divide the given number with 10, then you will get remainder 8.
+and that 8 is the our final output. so use the '%' operator. it gives the 'Remainder value', but iof you can use the 
+'/'(division operator) it gives the quocifiaent.
+
+#Program in C++
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int num, last_num;
+cin>>num;
+last_num=num % 10;
+cout<<last_num;
+return 0;
+}
+
+

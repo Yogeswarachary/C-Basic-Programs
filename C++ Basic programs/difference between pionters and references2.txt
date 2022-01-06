@@ -1,0 +1,62 @@
+//Example Programs for function Pointers//
+
+#include<iostream>
+
+using namespace std;
+
+int add(int a, int b) //creating a 'add' function
+
+{
+
+return a+b; //returning a+b function
+
+}
+
+int main()
+
+{
+
+int (*funcptr)(int, int); //Declaring a function pointer
+
+funcptr=add; //assigning address of 'add' function to the 'funcptr' pointer
+
+int sum=funcptr(20,30); //assigning values to the "funcptr" and storing result in the 'sum' variable.
+
+std::cout<<"the value of sum is:"<<sum<<std::endl;
+
+return 0;
+
+}
+
+//Getting address of main()//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+std::cout<<"the address of main() is:"<<&main<<std::endl;
+return 0;
+}
+
+//passing function name to the Pointer//
+
+#include<iostream>
+using namespace std;
+void printname(char* name)
+{
+std::cout<<"the name is:"<<name<<std::endl;
+]
+int main()
+{
+char s[20];
+void (*ptr)(char*);
+ptr=printname;
+std::cout<<"enter your name:"<<std::endl;
+cin>>s;
+cout<<s;
+ptr(s);
+return 0;
+}
+
+
+

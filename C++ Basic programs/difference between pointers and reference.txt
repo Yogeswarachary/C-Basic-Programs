@@ -1,0 +1,29 @@
+//arthimatic Operations with the Pointers and References
+//We can Increment the pointers, but we can not increment the references.//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a[]={1,2,3,4,5}; //Array initialization
+    int *ptr; //Pointer declaration
+    ptr=a; //assigning base address to pointer ptr.
+    cout<<"the value of ptr is:"<<*ptr<<endl;
+    ptr=ptr+1; //Incrementing the value of ptr by 1;
+    std::cout<<"\n the value of ptr is:"<<*ptr<<std::endl;
+    return 0;
+}
+
+//doing arthimatic operations with the reference//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a=10; //variable declaration
+    int &b=a; //Assignung value to the reference
+    &b=&a+3; // arthimatic operation is not possible with reference variable
+    return 0;
+}
+
+//

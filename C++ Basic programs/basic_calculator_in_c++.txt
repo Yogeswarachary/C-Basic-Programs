@@ -1,0 +1,54 @@
+###C++ calculator program
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+float a, b, sum,sub,mul,div,mod;
+int ch;
+
+cout<<"enter the two operand values:"<<endl;
+cin>>a>>" ">>b;
+return 0;
+}
+
+void choice(int ch)
+{
+cout<<"1.Addition\n, 2.Substraction\n,3.Multiplication\n,4.Division\n,5.Modulus"<<endl;
+cin>>ch;
+if(ch==1)
+{
+float sum=a+b;
+cout<<"The addition of the two operands is="<<endl;
+}
+
+else if(ch==2)
+{
+float sub=a-b;
+cout<<"The substraction of the two operands is ="<<endl;
+}
+
+else if(ch==3)
+{
+float mul=a*b;
+cout<<"The Multiplication of two operands is="<<endl;
+}
+
+else if(ch==4)
+{
+float div=a/b;
+cout<<"The division of two operands is="<<endl;
+}
+
+else if(ch==5)
+{
+cout<<"The division of two operands is="<<endl;
+}
+
+else
+{
+cout<<"You are trying do wrong calculation"<<endl;
+}
+}
+output:- Not getting output try another way of

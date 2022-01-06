@@ -1,0 +1,61 @@
+Greatest common divisor
+78,98=a,b
+78,20=a,b
+50,20=a,b
+30,20=a,b
+10,20=a,b
+10,10=a,b
+
+eg2:-
+
+475,690=a,b
+475,215=a,b
+260,215=a,b
+45,215=a,b
+45,170=a,b
+45,125=a,b
+45,80=a,b
+45,30=a,b
+15,30=a,b
+15,15=a,b 
+"The GCD for 475 and 690 is 15". 15 is the common divisor for the both numbers
+
+Here is the example Program for the above logic algorithm.
+#Program
+
+#include<iostream>
+using namespace std;
+
+int gcd(int a, int b)
+{
+// everything divides 0
+if (a==0)
+return a;
+
+if(b==0)
+return b;
+
+// base case
+if(a==b)
+return a;
+
+// a is greter
+if(a>b)
+return gcd(a-b,b);
+return gcd(a,b-a);
+}
+int main()
+{
+int a=100, b=174;
+cout<<"GCD of"<<a<<" and "<<b<<" is <<gcd(a,b);
+return 0;
+}
+
+
+
+
+
+
+
+
+

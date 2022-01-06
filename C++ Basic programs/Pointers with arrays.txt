@@ -1,0 +1,111 @@
+//Arrays in pointers //
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int *ptr;
+int marks[10];
+std::cout<<"the enter the elements of the array:"<<std::endl;
+for(i=0;i<10<i++)
+{
+cin<<marks[];
+}
+ptr=marks;
+std::cout<<"the value of *ptr is:<<*ptr<<std::endl;
+std::cout<<"the value of marks is:<<*marks<<std::endl;
+}
+
+//Another example with Pointers and Arrays//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int ptr1[5];
+int *ptr2[5];
+std::cout<<"enter five numbers:"<<std::endl;
+for(int i=0;i<5;i++)
+{
+std::cin>>ptr1[i];
+}
+for(int i=0;i<5;i++)
+{
+ptr2[i]=&ptr1[i];
+}
+std::cout<<"The values are:"<<std::endl;
+for(int i=0;i<5;i++)
+{
+std::cout<<*ptr2[i]<<std::endl;
+}
+}
+
+//Pointers with strings//
+
+#include<iostream>
+using nammespace std;
+int main()
+{
+char *names[5]={"motu","chotu","Bantu","chintu","tillu"};
+for(int i=0;i<5;i++)
+{
+std::cout<<names[i]<<std::endl;
+}
+return 0;
+}
+
+//suppose you want assign ponter address to diffrent//
+//data type variables it throws the error as the output//
+
+//Here is the the example program for the above statement//
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int *ptr;
+    float f=11.4;
+    ptr=&f; // it will gives error.
+    std::cout<<"the value of *ptr is:"<<*ptr<<std::endl;
+    return 0;
+}
+
+//In the above we declared the pointer of integer type and//
+//variable of float type. so that error will be occured. By using the 'Void' pointer//
+//we can over come this problem. In fact void pointer can hold any data type//
+
+Here is the example program
+#program
+
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+  void *ptr;   // void pointer declaration  
+  int a=9;   // integer variable initialization  
+  ptr=&a;   // storing the address of 'a' variable in a void pointer variable.  
+  std::cout << &a << std::endl;  
+  std::cout << ptr << std::endl;  
+  return 0;  
+}  
+
+//Pointer type casting(pointer data type conversion//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    void *ptr1; //void pointer declaration
+    int *ptr2; //Integer pointer declaration
+    int a=10; //Integer value declaration
+    ptr1=&a; //storing the address of data variable in void
+    ptr2=(int*)ptr1; //assigning void pointer to integer pointer
+    std::cout<<"the value of the *ptr2 is:-"<<*ptr2<<std::endl;
+    return 0;
+}
+
+
+
+

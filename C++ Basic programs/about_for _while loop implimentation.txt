@@ -1,0 +1,86 @@
+#include <iostream>  
+using namespace std;  
+int main() {  
+         for(int i=1;i<=10;i++){      
+            cout<<i <<"\n";      
+          }       
+    } 
+
+#include <iostream>  
+using namespace std;  
+   
+int main () {  
+        for(int i=1;i<=3;i++){      
+             for(int j=1;j<=3;j++){      
+            cout<<i<<" "<<j<<"\n";      
+          }     
+        }  
+    }  
+
+//Aboutwhile loop//
+//eg program//
+#include<iostream>
+using namespace std;
+int main()
+    {
+        int i=1;
+        while(i<=10)
+        {
+            cout<<i<<"\n";
+            i++;
+        }
+    }
+
+//Nested while loop//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int i=1;
+while(i<=3)
+{
+int j=1;
+while(j<=3)
+cout<<i<<" "<<j<<"\n";
+j++;
+}
+i++;
+}
+}
+
+//Program for Do_While Loop//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int i=1;
+do
+{
+cout<<i<<"\n";
+i++;
+}
+while(i<=10);
+}
+
+
+//Program for Nested do_while//
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int i=1;
+do{
+int j=1;
+do{
+cout<<i<<"\n";
+j++;
+}
+while(j<=3);
+i++;
+}
+while(i<=3);
+}
+
